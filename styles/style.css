@@ -39,14 +39,9 @@
 .header {
   inline-size: clamp(375px, 48.6vw, 700px);
   max-block-size: 368px;
-  /* display: flex; */
   flex-direction: column;
   font-family: var(--accent-font), sans-serif;
   text-transform: uppercase;
-  /* background-color: var(--reverse-accent-color);
-  border: 2px solid var(--accent-color); */
-  /* align-items: center;
-  justify-content: center; */
   gap: 20px;
   padding: 130px 0;
   margin-block-end: 98px;
@@ -68,8 +63,6 @@
 
 .card {
   inline-size: clamp(375px, 48.6vw, 700px);
-  /* background-color: var(--reverse-accent-color);
-  border: 2px solid var(--accent-color); */
   display: flex;
   flex-direction: column;
 }
@@ -96,7 +89,7 @@
   .card__label-text {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     text-stroke: 1px var(--text-stroke-color);
-    text-shadow: 0;
+    text-shadow: none;
   }
 }
 
@@ -109,7 +102,7 @@
   mix-blend-mode: hard-light;
   filter: opacity(50%);
   text-transform: uppercase;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
 
   z-index: 1;
@@ -133,10 +126,8 @@
 }
 
 .button {
-  /* background-color: var(--reverse-accent-color);
-  border: 2px solid var(--accent-color); */
   color: var(--reverse-accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -160,9 +151,6 @@
 
 .button-modal {
   gap: 8px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .button-modal.button-modal-open {
@@ -180,7 +168,7 @@ dialog::backdrop {
 }
 
 .dialog-text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 150%;
